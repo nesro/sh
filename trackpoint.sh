@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if ! id | grep root; then
+if ! id | grep root >/dev/null; then
 	echo "you need to be root"
 	exit 1
 fi
